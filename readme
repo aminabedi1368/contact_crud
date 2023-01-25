@@ -1,0 +1,8 @@
+start all service:
+docker-compose up -d
+
+for get access token:
+https://token.aminabedi.com/
+
+insert dummy data
+https://burency.aminabedi.com/dummydata

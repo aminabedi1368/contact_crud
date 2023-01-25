@@ -1,0 +1,3 @@
+burency.aminabedi.com {
+    reverse_proxy backend:4000
+}
