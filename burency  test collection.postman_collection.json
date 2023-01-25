@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "7aa355cd-9dd9-49e7-b1b2-7b7965404c21",
+		"name": "burency  test collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "165094"
+	},
+	"item": [
+		{
+			"name": "/contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNTU5YzU5MDgzZDc3YWI2NDUxOThiNTIxZmM4ZmVmZmVlZmJkNjIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiYW1pbiBhYmVkaSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA2TXoyNjJaS0dNMlh0dGNSdUUxMGdvVll6TUt1alhsYzRGUUlvV2Z3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2J1cmVuY3ktZmI3ZDUiLCJhdWQiOiJidXJlbmN5LWZiN2Q1IiwiYXV0aF90aW1lIjoxNjc0NjQ2MjMxLCJ1c2VyX2lkIjoiVzZDeDhtS0g4WGVKd1AybTVGUk5NRzlaNTVyMiIsInN1YiI6Ilc2Q3g4bUtIOFhlSndQMm01RlJOTUc5WjU1cjIiLCJpYXQiOjE2NzQ2NDYyMzEsImV4cCI6MTY3NDY0OTgzMSwiZW1haWwiOiJhbWluLmFiZWRpLjEzNjhAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDM4NzEzMjg4ODI4NzA1MjAyMzMiXSwiZW1haWwiOlsiYW1pbi5hYmVkaS4xMzY4QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.FduTTPcFJTM7VypCAxXQjZT_QvgCGYypQMMQJc_UIZZehtfgFeLwUTZUNgtYScIdSmHmHHHEsLztFwRct3fq-H24Bu5ytdZag56F4E1-aV3fUERDy1Wl2uE85PnuRTkkzipLMEKLysHNVp1LI0eCAe8vQ4VRaCEXBX8IPrONNOvG2tl41Gt5aqFvXSiT8khA4IzTHytVREU13ZYP_hzgpGs-YLvor-5WT6vyBfZVp20cGnUYjfXx587DKv5RTQdXtFZUEweHsEm3EDlOMZjiV6CszDy2cwtJu8b-VP7GKDSYsHYGe5KIt7EenY55dimCYDcCV-CzjYuP-vXBLDflhA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"contact_name\": \"Tú\",\n    \"contact_middle_name\": null,\n    \"contact_surname\": \"Bussons\",\n    \"contact_email\": null,\n    \"contact_phone\": \"373-504-1131\",\n    \"contact_note\": null,\n    \"contact_address\": null,\n    \"contact_location\": \"(-30.46828 ,144.508375)\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://burency.aminabedi.com/v1/contacts",
+					"protocol": "https",
+					"host": [
+						"burency",
+						"aminabedi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNTU5YzU5MDgzZDc3YWI2NDUxOThiNTIxZmM4ZmVmZmVlZmJkNjIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiYW1pbiBhYmVkaSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA2TXoyNjJaS0dNMlh0dGNSdUUxMGdvVll6TUt1alhsYzRGUUlvV2Z3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2J1cmVuY3ktZmI3ZDUiLCJhdWQiOiJidXJlbmN5LWZiN2Q1IiwiYXV0aF90aW1lIjoxNjc0NjQ2MjMxLCJ1c2VyX2lkIjoiVzZDeDhtS0g4WGVKd1AybTVGUk5NRzlaNTVyMiIsInN1YiI6Ilc2Q3g4bUtIOFhlSndQMm01RlJOTUc5WjU1cjIiLCJpYXQiOjE2NzQ2NDYyMzEsImV4cCI6MTY3NDY0OTgzMSwiZW1haWwiOiJhbWluLmFiZWRpLjEzNjhAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDM4NzEzMjg4ODI4NzA1MjAyMzMiXSwiZW1haWwiOlsiYW1pbi5hYmVkaS4xMzY4QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.FduTTPcFJTM7VypCAxXQjZT_QvgCGYypQMMQJc_UIZZehtfgFeLwUTZUNgtYScIdSmHmHHHEsLztFwRct3fq-H24Bu5ytdZag56F4E1-aV3fUERDy1Wl2uE85PnuRTkkzipLMEKLysHNVp1LI0eCAe8vQ4VRaCEXBX8IPrONNOvG2tl41Gt5aqFvXSiT8khA4IzTHytVREU13ZYP_hzgpGs-YLvor-5WT6vyBfZVp20cGnUYjfXx587DKv5RTQdXtFZUEweHsEm3EDlOMZjiV6CszDy2cwtJu8b-VP7GKDSYsHYGe5KIt7EenY55dimCYDcCV-CzjYuP-vXBLDflhA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://burency.aminabedi.com/v1/contacts?name=amin&phone=905312653420&email=pbumphrey4y@buzzfeed.com",
+					"protocol": "https",
+					"host": [
+						"burency",
+						"aminabedi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"contacts"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "amin"
+						},
+						{
+							"key": "phone",
+							"value": "905312653420"
+						},
+						{
+							"key": "email",
+							"value": "pbumphrey4y@buzzfeed.com"
+						},
+						{
+							"key": "desc",
+							"value": "contact_id",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "ofset",
+							"value": "0",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNTU5YzU5MDgzZDc3YWI2NDUxOThiNTIxZmM4ZmVmZmVlZmJkNjIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiYW1pbiBhYmVkaSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA2TXoyNjJaS0dNMlh0dGNSdUUxMGdvVll6TUt1alhsYzRGUUlvV2Z3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2J1cmVuY3ktZmI3ZDUiLCJhdWQiOiJidXJlbmN5LWZiN2Q1IiwiYXV0aF90aW1lIjoxNjc0NjQ2MjMxLCJ1c2VyX2lkIjoiVzZDeDhtS0g4WGVKd1AybTVGUk5NRzlaNTVyMiIsInN1YiI6Ilc2Q3g4bUtIOFhlSndQMm01RlJOTUc5WjU1cjIiLCJpYXQiOjE2NzQ2NDYyMzEsImV4cCI6MTY3NDY0OTgzMSwiZW1haWwiOiJhbWluLmFiZWRpLjEzNjhAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDM4NzEzMjg4ODI4NzA1MjAyMzMiXSwiZW1haWwiOlsiYW1pbi5hYmVkaS4xMzY4QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.FduTTPcFJTM7VypCAxXQjZT_QvgCGYypQMMQJc_UIZZehtfgFeLwUTZUNgtYScIdSmHmHHHEsLztFwRct3fq-H24Bu5ytdZag56F4E1-aV3fUERDy1Wl2uE85PnuRTkkzipLMEKLysHNVp1LI0eCAe8vQ4VRaCEXBX8IPrONNOvG2tl41Gt5aqFvXSiT8khA4IzTHytVREU13ZYP_hzgpGs-YLvor-5WT6vyBfZVp20cGnUYjfXx587DKv5RTQdXtFZUEweHsEm3EDlOMZjiV6CszDy2cwtJu8b-VP7GKDSYsHYGe5KIt7EenY55dimCYDcCV-CzjYuP-vXBLDflhA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"contact_id\": 204,\n        \"contact_name\": \"aminnnnn\",\n        \"contact_middle_name\": null,\n        \"contact_surname\": \"Bussons tehran\",\n        \"contact_email\": null,\n        \"contact_phone\": \"373-504-1131\",\n        \"contact_note\": null,\n        \"contact_address\": null,\n        \"contact_location\": \"(-30.46828,144.508375)\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://burency.aminabedi.com/v1/contacts",
+					"protocol": "https",
+					"host": [
+						"burency",
+						"aminabedi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/contact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNTU5YzU5MDgzZDc3YWI2NDUxOThiNTIxZmM4ZmVmZmVlZmJkNjIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiYW1pbiBhYmVkaSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA2TXoyNjJaS0dNMlh0dGNSdUUxMGdvVll6TUt1alhsYzRGUUlvV2Z3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2J1cmVuY3ktZmI3ZDUiLCJhdWQiOiJidXJlbmN5LWZiN2Q1IiwiYXV0aF90aW1lIjoxNjc0NjQ2MjMxLCJ1c2VyX2lkIjoiVzZDeDhtS0g4WGVKd1AybTVGUk5NRzlaNTVyMiIsInN1YiI6Ilc2Q3g4bUtIOFhlSndQMm01RlJOTUc5WjU1cjIiLCJpYXQiOjE2NzQ2NDYyMzEsImV4cCI6MTY3NDY0OTgzMSwiZW1haWwiOiJhbWluLmFiZWRpLjEzNjhAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDM4NzEzMjg4ODI4NzA1MjAyMzMiXSwiZW1haWwiOlsiYW1pbi5hYmVkaS4xMzY4QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.FduTTPcFJTM7VypCAxXQjZT_QvgCGYypQMMQJc_UIZZehtfgFeLwUTZUNgtYScIdSmHmHHHEsLztFwRct3fq-H24Bu5ytdZag56F4E1-aV3fUERDy1Wl2uE85PnuRTkkzipLMEKLysHNVp1LI0eCAe8vQ4VRaCEXBX8IPrONNOvG2tl41Gt5aqFvXSiT8khA4IzTHytVREU13ZYP_hzgpGs-YLvor-5WT6vyBfZVp20cGnUYjfXx587DKv5RTQdXtFZUEweHsEm3EDlOMZjiV6CszDy2cwtJu8b-VP7GKDSYsHYGe5KIt7EenY55dimCYDcCV-CzjYuP-vXBLDflhA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"contact_id\": 196\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://burency.aminabedi.com/v1/contacts",
+					"protocol": "https",
+					"host": [
+						"burency",
+						"aminabedi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/nearby",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNTU5YzU5MDgzZDc3YWI2NDUxOThiNTIxZmM4ZmVmZmVlZmJkNjIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiYW1pbiBhYmVkaSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA2TXoyNjJaS0dNMlh0dGNSdUUxMGdvVll6TUt1alhsYzRGUUlvV2Z3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2J1cmVuY3ktZmI3ZDUiLCJhdWQiOiJidXJlbmN5LWZiN2Q1IiwiYXV0aF90aW1lIjoxNjc0Njc4MTIxLCJ1c2VyX2lkIjoiVzZDeDhtS0g4WGVKd1AybTVGUk5NRzlaNTVyMiIsInN1YiI6Ilc2Q3g4bUtIOFhlSndQMm01RlJOTUc5WjU1cjIiLCJpYXQiOjE2NzQ2NzgxMjEsImV4cCI6MTY3NDY4MTcyMSwiZW1haWwiOiJhbWluLmFiZWRpLjEzNjhAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDM4NzEzMjg4ODI4NzA1MjAyMzMiXSwiZW1haWwiOlsiYW1pbi5hYmVkaS4xMzY4QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.ZQflCzCwSKriJQPQT1jXW1cyd38LOKIQ8_hjW4H4vEljCSWqqL6ELiK8gBFyXiA-6bkcNgqKHSLFtzMSlXB4cHrLPPXG4qdR2UXGEQ3E0WPMK-5a8vRgUUUmlNZ9hn-hJIqp3SXTri1Y5yZmhpIg4suI5qYTuayOZJtsZ6hMXiZ5FFHR_3onEwhxuNjheguCcQ-QHcNaXBqCcce3KX3vgtOSwT4Dv49dQBUnhoAIW4gX4SC2sXRvbn2RXd__G_T2jzYS8RldX3z6GZb3aG8yZUXkcHZ0UbtW3e7Tlx7qLAcNRSRiJH1Z9qKCGeGIcJtFNEb0DE9tcycuumGbj5Y6sQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"location\": {\n        \"lat\": 41.005542,\n        \"lng\": 28.812319\n    },\n    \"distance\":1000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://burency.aminabedi.com/v1/nearby",
+					"protocol": "https",
+					"host": [
+						"burency",
+						"aminabedi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"nearby"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://burency.aminabedi.com/v1/history?contact_id=204&limit=4&ofset=0",
+					"protocol": "https",
+					"host": [
+						"burency",
+						"aminabedi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"history"
+					],
+					"query": [
+						{
+							"key": "contact_id",
+							"value": "204"
+						},
+						{
+							"key": "limit",
+							"value": "4"
+						},
+						{
+							"key": "ofset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwNTU5YzU5MDgzZDc3YWI2NDUxOThiNTIxZmM4ZmVmZmVlZmJkNjIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiYW1pbiBhYmVkaSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA2TXoyNjJaS0dNMlh0dGNSdUUxMGdvVll6TUt1alhsYzRGUUlvV2Z3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2J1cmVuY3ktZmI3ZDUiLCJhdWQiOiJidXJlbmN5LWZiN2Q1IiwiYXV0aF90aW1lIjoxNjc0NjQ2MjMxLCJ1c2VyX2lkIjoiVzZDeDhtS0g4WGVKd1AybTVGUk5NRzlaNTVyMiIsInN1YiI6Ilc2Q3g4bUtIOFhlSndQMm01RlJOTUc5WjU1cjIiLCJpYXQiOjE2NzQ2NDYyMzEsImV4cCI6MTY3NDY0OTgzMSwiZW1haWwiOiJhbWluLmFiZWRpLjEzNjhAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDM4NzEzMjg4ODI4NzA1MjAyMzMiXSwiZW1haWwiOlsiYW1pbi5hYmVkaS4xMzY4QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.FduTTPcFJTM7VypCAxXQjZT_QvgCGYypQMMQJc_UIZZehtfgFeLwUTZUNgtYScIdSmHmHHHEsLztFwRct3fq-H24Bu5ytdZag56F4E1-aV3fUERDy1Wl2uE85PnuRTkkzipLMEKLysHNVp1LI0eCAe8vQ4VRaCEXBX8IPrONNOvG2tl41Gt5aqFvXSiT8khA4IzTHytVREU13ZYP_hzgpGs-YLvor-5WT6vyBfZVp20cGnUYjfXx587DKv5RTQdXtFZUEweHsEm3EDlOMZjiV6CszDy2cwtJu8b-VP7GKDSYsHYGe5KIt7EenY55dimCYDcCV-CzjYuP-vXBLDflhA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://burency.aminabedi.com/api/tasks",
+					"protocol": "https",
+					"host": [
+						"burency",
+						"aminabedi",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/dummydata",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"contact_name\": \"Tú\",\n    \"contact_middle_name\": null,\n    \"contact_surname\": \"Bussons\",\n    \"contact_email\": null,\n    \"contact_phone\": \"373-504-1131\",\n    \"contact_note\": null,\n    \"contact_address\": null,\n    \"contact_location\": \"(-30.46828 ,144.508375)\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://burency.aminabedi.com/dummydata",
+					"protocol": "https",
+					"host": [
+						"burency",
+						"aminabedi",
+						"com"
+					],
+					"path": [
+						"dummydata"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
